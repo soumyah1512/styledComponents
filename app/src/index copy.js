@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import AppLogin from './AppLogin';
 import reportWebVitals from './reportWebVitals';
-import RoutApp from './Routing/RoutApp';
-import { BrowserRouter } from 'react-router-dom'
-
+import { AuthProvider } from './login/contexts/AuthProvider'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <RoutApp/>
-    </BrowserRouter>
+    <AuthProvider>
+      <AppLogin />
+    </AuthProvider>
   </React.StrictMode>
 );
 
