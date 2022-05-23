@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 
 let data = {
-    1: "Mouse",
+    1: "Mouse",  
     2: "Keyboard",
     3: "Monitor",
 };

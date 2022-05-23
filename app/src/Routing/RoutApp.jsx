@@ -28,7 +28,7 @@ const RoutApp = () => {
             <Route path=":id" element={<Product/>}/>
 
             </Route>
-        </Routes>
+        </Routes> 
     </div>
   )
 }
